@@ -17,15 +17,15 @@ Open **GraphQL_Client.mltbx** to install toolbox.
 If you want to make GraphQL Client a part of your project without installing toolbox just add `GraphQL.m` class to your project.
 
 ## Examples
-### Example 1. Simple Query
+### Example 1. Simple query
 
-\hfill \break
+Basic GraphQL request
 
 ```matlab:Code
 % Define endpoint URL
 url = 'https://api.graphql.jobs/';
 % Compose query
-query = 'query{jobs{title,applyUrl,postedAt}}';
+query = 'query{jobs{title,locationNames,postedAt}}';
 % Create GraphQL object with predefined web options
 g = GraphQL(url, 'Query', query);
 % Execute query
@@ -37,11 +37,11 @@ jobs.postedAt = GraphQL.datetime(jobs.postedAt);
 head(jobs, 3)
 ```
 
-| |title|applyUrl|postedAt|
+| |title|locationNames|postedAt|
 |:--:|:--:|:--:|:--:|
-|1|'Senior Fullstack En...|'https://grnh.se/2d8...|2019-08-12T20:19:52....|
-|2|'Full Stack JavaScri...|'https://docs.google...|2019-08-12T12:58:28....|
-|3|'Senior Software Eng...|'mailto:karolis.mazu...|2019-08-12T10:47:47....|
+|1|'Senior Fullstack En...|'San Francisco'|2019-08-12T20:19:52....|
+|2|'Full Stack JavaScri...|'Remote / Berlin'|2019-08-12T12:58:28....|
+|3|'Senior Software Eng...|'London, United King...|2019-08-12T10:47:47....|
 
 ### Example 2. Encoding data
 
@@ -83,7 +83,7 @@ opts = weboptions('HeaderFields', {'apiKey' apiKey});
 % Optionally increase request timeout (usefull for heavy requests)
 opts.Timeout = 10;
 % Compose query
-query = 'query{jobs{title,applyUrl,postedAt}}';
+query = 'query{jobs{title,locationNames,postedAt}}';
 % Create GraphQL object with predefined web options
 g = GraphQL(url, 'Query', query, 'WebOptions', opts);
 % Execute query
