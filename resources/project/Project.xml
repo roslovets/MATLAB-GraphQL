@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project MetadataType="monolithic">
+    <Categories Location="Root">
+        <Category Location="FileClassCategory">
+            <Label Location="other">
+                <Info Name="Other" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="artifact">
+                <Info Name="Artifact" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="none">
+                <Info Name="None" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="test">
+                <Info Name="Test" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="convenience">
+                <Info Name="Convenience" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="design">
+                <Info Name="Design" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Info DataType="None" Name="Classification" ReadOnly="1" SingleValued="1"/>
+            <Label Location="derived">
+                <Info Name="Derived" ReadOnly="READ_ONLY"/>
+            </Label>
+        </Category>
+    </Categories>
+    <Files Location="Root">
+        <File Location="README_images">
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="image_0.png">
+                <Info/>
+            </File>
+            <Info/>
+        </File>
+        <File Location="GraphQL_toolbox.prj">
+            <Info/>
+        </File>
+        <File Location="doc">
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <Info/>
+            <File Location="GettingStarted.mlx">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="dev">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="gen_doc.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="open_doc.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="build_toolbox.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="GraphQL.m">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="README.md">
+            <Info/>
+        </File>
+    </Files>
+    <ProjectPath Location="Root">
+        <Reference Location="f8f7698d-794b-4c4b-9f68-1bd3d4ccb07e">
+            <Info Ref="dev" Type="Relative"/>
+        </Reference>
+    </ProjectPath>
+    <Info Location="ProjectData">
+        <Info Name="GraphQL Client"/>
+    </Info>
+    <ProjectData Location="Root"/>
+    <Extensions Location="Root"/>
+    <EntryPoints Location="Root">
+        <EntryPoint Location="b48d1472-85fb-4022-871f-aa107629d7c5">
+            <Info File="dev/open_doc.m" Icon="" Name="open_doc"
+                Type="Basic" Visible="1"/>
+        </EntryPoint>
+        <EntryPoint Location="6d6866f3-b8ce-4aa6-9d71-53d24c116f1e">
+            <Info File="dev/gen_doc.m" Icon="" Name="gen_doc"
+                Type="Basic" Visible="1"/>
+        </EntryPoint>
+        <EntryPoint Location="23035220-6d46-4573-bb50-4661519fa5ae">
+            <Info File="dev/build_toolbox.m" Icon=""
+                Name="build_toolbox" Type="Basic" Visible="1"/>
+        </EntryPoint>
+    </EntryPoints>
+</project>
