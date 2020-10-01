@@ -19,7 +19,7 @@ If you want to make GraphQL Client a part of your project without installing too
 ## Examples
 ### Example 1. Simple query
 
-Basic GraphQL request
+Basic GraphQL request with datetime decoding
 
 ```matlab:Code
 % Define endpoint URL
@@ -45,7 +45,7 @@ head(jobs, 3)
 
 ### Example 2. Encoding data
 
-\hfill \break
+How to encode MATLAB structure to query string
 
 ```matlab:Code
 % Define endpoint URL
@@ -71,7 +71,7 @@ res.data.Country
 
 ### Example 3. Add API key (change request options)
 
-\hfill \break
+How to modify HTTP request options
 
 ```matlab:Code
 % Define endpoint URL
