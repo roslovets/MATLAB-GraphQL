@@ -10,7 +10,7 @@ Provided `GraphQL` class helps you to appropriately encode data, prepare query a
 
 ## How to install
 
-Open **GraphQL_Client.mltbx** to install toolbox.
+Download **GraphQL_Client.mltbx** from [releases](https://github.com/roslovets/MATLAB-GraphQL/releases) page and open it to install toolbox.
 
 ## How to embed in your project
 
