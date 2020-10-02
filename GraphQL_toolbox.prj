@@ -6,7 +6,7 @@
     <param.company>ETMC Exponenta</param.company>
     <param.summary>Connect to GraphQL API form MATLAB</param.summary>
     <param.description>Provided GraphQL class helps you to appropriately encode data, prepare query and call GraphQL endpoint via regular HTTP POST request under the hood</param.description>
-    <param.screenshot />
+    <param.screenshot>${PROJECT_ROOT}\README_images\image_0.png</param.screenshot>
     <param.version>0.0.1</param.version>
     <param.output>${PROJECT_ROOT}\GraphQL Client.mltbx</param.output>
     <param.products.name />
@@ -54,7 +54,6 @@ README_images</param.exclude.filters>
       <param.authnamewatermark />
       <param.email />
       <param.company />
-      <param.screenshot />
       <param.output />
       <param.products.name />
       <param.products.id />
@@ -88,17 +87,10 @@ README_images</param.exclude.filters>
       <file>${PROJECT_ROOT}</file>
     </fileset.rootdir>
     <fileset.rootfiles>
-      <file>${PROJECT_ROOT}\dev</file>
+      <file>${PROJECT_ROOT}\.git</file>
+      <file>${PROJECT_ROOT}\.gitignore</file>
       <file>${PROJECT_ROOT}\doc</file>
       <file>${PROJECT_ROOT}\GraphQL.m</file>
-      <file>${PROJECT_ROOT}\GraphQL.prj</file>
-      <file>${PROJECT_ROOT}\GraphQL_Client.mltbx</file>
-      <file>${PROJECT_ROOT}\GraphQL_toolbox.mltbx</file>
-      <file>${PROJECT_ROOT}\GraphQL_toolbox.prj</file>
-      <file>${PROJECT_ROOT}\README.md</file>
-      <file>${PROJECT_ROOT}\README_images</file>
-      <file>${PROJECT_ROOT}\resources</file>
-      <file>${PROJECT_ROOT}\str1.prj</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
     <fileset.depfun.excluded />

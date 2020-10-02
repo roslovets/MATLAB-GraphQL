@@ -102,16 +102,16 @@
     <Extensions Location="Root"/>
     <EntryPoints Location="Root">
         <EntryPoint Location="b48d1472-85fb-4022-871f-aa107629d7c5">
-            <Info File="dev/open_doc.m" Icon="" Name="open_doc"
+            <Info File="dev/open_doc.m" Icon="" Name="1. Open doc"
                 Type="Basic" Visible="1"/>
         </EntryPoint>
         <EntryPoint Location="6d6866f3-b8ce-4aa6-9d71-53d24c116f1e">
-            <Info File="dev/gen_doc.m" Icon="" Name="gen_doc"
+            <Info File="dev/gen_doc.m" Icon="" Name="2. Generate doc"
                 Type="Basic" Visible="1"/>
         </EntryPoint>
         <EntryPoint Location="23035220-6d46-4573-bb50-4661519fa5ae">
             <Info File="dev/build_toolbox.m" Icon=""
-                Name="build_toolbox" Type="Basic" Visible="1"/>
+                Name="3. Build Toolbox" Type="Basic" Visible="1"/>
         </EntryPoint>
     </EntryPoints>
 </project>
