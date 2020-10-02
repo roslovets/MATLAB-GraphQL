@@ -1,5 +1,5 @@
 function build_toolbox(v)
-% Package Toolbox
+%% Package Toolbox
 arguments
     v char = '' % Toolbox version
 end

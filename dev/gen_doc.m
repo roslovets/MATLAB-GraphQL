@@ -1,4 +1,5 @@
-function gendoc
+function gen_doc
+%% Generate documentation
 DU = DocUtils;
 p = currentProject;
 source = fullfile(p.RootFolder, 'doc/GettingStarted.mlx');
