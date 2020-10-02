@@ -53,7 +53,8 @@ classdef GraphQL < handle
             datetime.setDefaultFormats('default', dateformat);
             datetime.setDefaultFormats('defaultdate', dateformat);
             json = jsonencode(data);
-            fs1 = extractBetween(json, '"', '":', 'Boundaries', "inclusive");
+            pat = '"' + asManyOfPattern(alphanumericsPattern(1) | "_", 1) + '":';
+            fs1 = extract(json, pat);
             fs2 = strip(strip(fs1, ':'), '"') + ":";
             query = char(replace(json, fs1, fs2));
             query = string(query(2:end - 1));
