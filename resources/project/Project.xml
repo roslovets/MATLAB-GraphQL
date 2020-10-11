@@ -71,7 +71,21 @@
                     </Category>
                 </Info>
             </File>
-            <File Location="build_toolbox.m">
+            <File Location="build.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="build_and_install.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="uninstall.m">
                 <Info>
                     <Category UUID="FileClassCategory">
                         <Label UUID="design"/>
@@ -110,8 +124,8 @@
                 Type="Basic" Visible="1"/>
         </EntryPoint>
         <EntryPoint Location="23035220-6d46-4573-bb50-4661519fa5ae">
-            <Info File="dev/build_toolbox.m" Icon=""
-                Name="3. Build Toolbox" Type="Basic" Visible="1"/>
+            <Info File="dev/build.m" Icon="" Name="3. Build Toolbox"
+                Type="Basic" Visible="1"/>
         </EntryPoint>
     </EntryPoints>
 </project>
