@@ -1,6 +1,6 @@
 # MATLAB GraphQL Client
 
-Connect to [GraphQL](https://graphql.org/) API form MATLAB
+Connect to [GraphQL](https://graphql.org/) API from MATLAB
 
 ![image_0.png](README_images/image_0.png)
 
