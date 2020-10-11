@@ -70,6 +70,14 @@ classdef GraphQL < handle
             dt = datetime(str, 'InputFormat', "yyyy-MM-dd'T'HH:mm:ss.SS'Z'");
         end
         
+        function txt = plainFromClipboard()
+            %% Get plain string from clipboard
+            txt = clipboard('paste');
+            txt = strtrim(string(split(txt, newline)));
+            txt(startsWith(txt, "#") | txt == "") = [];
+            txt = join(txt, ' ');
+        end
+        
     end
     
 end
